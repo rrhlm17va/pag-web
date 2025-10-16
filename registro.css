@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #344e4e; 
+    --secondary-color: #49b8b2; 
+    --dark-color: #282b31; 
+    --light-color: #ffffff; 
+    --gray-color: #6b7280;
+}
+
+.register-body{
+    display: flex;
+    justify-content: right;
+    min-height: 100vh;
+    background-color: var(--light-color); 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.slide {
+    flex-grow: 1; 
+    background-image: url('logo\ 1.jpg'); 
+    background-size: cover; 
+    background-position: left; 
+    background-repeat: no-repeat; 
+    min-width: 300px; 
+}
+
+
+
+
+.register-form {
+    padding: 50px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 90%;
+    max-width: 400px;
+    
+}
+
+.titulo h1 {
+    color: var(--primary-color); 
+    margin-bottom: 20px;
+    margin-top: -25px;
+    font-size: 2rem;
+}
+
+.form-group, .form-text{
+    padding: 5.5px;
+}
+
+.form-control {
+    width: 100%;
+    padding:8.5px ;
+    border: 1px solid var(--gray-color); 
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color); 
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(73, 184, 178, 0.3); /* Sombra */
+}
+
+#check-form {
+    font-size: 12px;
+}
+.button-register {
+    background-color: var(--secondary-color); 
+    color: var(--dark-color);
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.button-register:hover {
+    background-color: #94fff3; 
+    color: var(--dark-color);
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+a {
+    color: #282b31;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .register-body {
+        justify-content: center; 
+    }
+    .slide {
+        display: none; 
+    }
+
+}
